@@ -35,4 +35,4 @@ git add .
 git commit -m "[release] $tag" --allow-empty
 git push
 
-cd doc && yarn deploy
+#cd doc && yarn deploy
