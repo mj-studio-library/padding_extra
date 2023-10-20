@@ -1,39 +1,61 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# padding_extra
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+This package provides extra padding related widgets.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+# Getting started
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+```shell
+$ flutter pub add local_file_preferences
+```
+This will add a line like this to your package's pubspec.yaml (and run an implicit flutter pub get):
 
-## Features
+```yaml
+dependencies:
+local_file_preferences: ^1.0.0
+```
+Alternatively, your editor might support flutter pub get. Check the docs for your editor to learn more.
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Import it
+Now in your Dart code, you can use:
 
 ```dart
-const like = 'sample';
+import 'package:local_file_preferences/local_file_preferences.dart';
 ```
 
-## Additional information
+# Usage
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+## Padding Widgets
+
+- `PaddingAll`
+- `PaddingHorizontal`
+- `PaddingVertical`
+- `PaddingSymmetric`
+- `PaddingTop`
+- `PaddingLeft`
+- `PaddingRight`
+- `PaddingBottom`
+
+## SafeArea Widgets
+
+Internally, These widgets use `SafeArea` widget and remove specified padding with `MediaQuery.removePadding`.
+
+- `SafeAreaHorizontal`
+- `SafeAreaVertical`
+- `SafeAreaTop`
+- `SafeAreaLeft`
+- `SafeAreaRight`
+- `SafeAreaBottom`
+
+```dart
+PaddingAll(
+  24,
+  child: _buildRect(context),
+),
+SafeAreaHorizontal(
+  child: Container(
+    color: Colors.yellow,
+    width: double.infinity,
+    height: 100,
+  ),
+),
+```

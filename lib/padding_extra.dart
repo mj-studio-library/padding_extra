@@ -1,7 +1,2 @@
-library padding_extra;
-
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'src/padding_widgets.dart';
+export 'src/safe_area_widgets.dart';

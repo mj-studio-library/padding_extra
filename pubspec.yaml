@@ -1,6 +1,6 @@
-name: local_file_preferences
-description: This package provides local json file saving and Loading utility.
-version: 1.0.0
+name: padding_extra
+description: This package provides extra padding widgets
+version: 0.0.1
 #homepage: https://mj-studio-library.github.io/flutter-local-file-preferences/
 #repository: https://github.com/mj-studio-library/flutter-local-file-preferences
 
