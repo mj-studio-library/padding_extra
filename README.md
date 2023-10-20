@@ -46,6 +46,18 @@ Internally, These widgets use `SafeArea` widget and remove specified padding wit
 - `SafeAreaRight`
 - `SafeAreaBottom`
 
+## Size Widgets
+
+- `Full`
+- `FullWidth`
+- `FullHeight`
+
+## Empty Widget
+
+- `Empty`
+
+## Code
+
 ```dart
 PaddingAll(
   24,
