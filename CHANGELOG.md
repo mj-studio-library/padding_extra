@@ -1,3 +1,7 @@
+## 1.0.3
+
+- Add `NoSafeArea`
+
 ## 1.0.2
 
 - Add `EmptyWidget`, `Full`, `FullWidth`, `FullHeight`
