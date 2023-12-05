@@ -181,3 +181,24 @@ class SafeAreaRight extends StatelessWidget {
     );
   }
 }
+
+class NoSafeArea extends StatelessWidget {
+  const NoSafeArea({
+    super.key,
+    required this.child,
+  });
+
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    return MediaQuery.removePadding(
+      context: context,
+      removeBottom: true,
+      removeLeft: true,
+      removeRight: true,
+      removeTop: true,
+      child: child,
+    );
+  }
+}
